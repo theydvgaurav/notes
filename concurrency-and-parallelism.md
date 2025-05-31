@@ -244,8 +244,8 @@ It’s:
 | Approach                 | Total Time | Notes                                    |
 |--------------------------|------------|------------------------------------------|
 | `sync_calls()`           | 11s        | All blocking, runs in main thread         |
-| `async_calls()` (with bad `time.sleep`) | 5s         | Event loop blocked for 3s                 |
-| `async_calls()` (fully async) | 3s         | Efficient!                               |
+| `async_calls()` (with bad `time.sleep`) | 6s         | Event loop blocked for 3s                 |
+| `async_calls()` (fully async) | 2s         | Efficient!                               |
 | `multi_threaded()` (with join) | ~6s        | Threads overlap, but GIL limits parallelism |
 
 ---
